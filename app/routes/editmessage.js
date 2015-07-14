@@ -7,6 +7,7 @@ export default Ember.Route.extend({
     	var meta = this.store.metadataFor("message");
     	console.log("status can be shown using metadata", meta);
     	console.log("metadata0", meta0);*/
+    	
   	},
 		model: function(params) {
 
@@ -16,4 +17,4 @@ export default Ember.Route.extend({
     	console.log("status 2", meta2); 
 	    return model;
 	  }
-});
+}); 
