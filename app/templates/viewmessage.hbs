@@ -1,0 +1,31 @@
+View Message Below.
+
+<br/><br/>
+<form>
+<table>
+	<tr>
+		<td>Message Text: &nbsp;</td>
+		<td>
+					{{model.preDefinedMessageText}}
+		</td>
+	</tr>
+	<tr>
+		<td>Gender: &nbsp;</td>
+		<td>
+					{{model.gender}}
+		</td>
+	</tr>
+	<tr>
+		<td>Age: &nbsp;</td>
+		<td>
+					{{model.age}}
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="button" name="submitBtn" id="submitBtn" value="Edit" {{action 'edit'}}/> 
+		&nbsp;&nbsp;
+		<input type="button" name="clearBtn" id="clearBtn" value="Cancel" {{action 'cancel'}}/></td>
+	</tr>
+</table>
+</form>

@@ -1,0 +1,32 @@
+Edit Your Message Below.
+
+<br/><br/>
+<form>
+<table>
+	<tr>
+		<td>Message Text: &nbsp;</td>
+		<td>
+			{{input type="hidden" id="message-id" value=id}}
+			{{input type="text" id="message-text" placeholder="What message to add?" value=model.preDefinedMessageText}}
+		</td>
+	</tr>
+	<tr>
+		<td>Gender: &nbsp;</td>
+		<td>
+					{{input type="text" id="gender" placeholder="Male/Female" value=model.gender}}
+		</td>
+	</tr>
+	<tr>
+		<td>Age: &nbsp;</td>
+		<td>
+			{{input type="text" id="age" placeholder="Age?" value=model.age}}
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="button" name="submitBtn" id="submitBtn" value="Save" {{action 'update'}}/> 
+		&nbsp;&nbsp;
+		<input type="button" name="clearBtn" id="clearBtn" value="Cancel" {{action 'cancel'}}/></td>
+	</tr>
+</table>
+</form>

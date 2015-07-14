@@ -1,0 +1,31 @@
+Add a new Message Below.
+
+<br/><br/>
+<form>
+<table>
+	<tr>
+		<td>Message Text: &nbsp;</td>
+		<td>
+			{{input type="text" id="message-text" placeholder="What message to add?" value=preDefinedMessageText}}
+		</td>
+	</tr>
+	<tr>
+		<td>Gender: &nbsp;</td>
+		<td>
+					{{input type="text" id="gender" placeholder="Male/Female" value=gender}}
+		</td>
+	</tr>
+	<tr>
+		<td>Age: &nbsp;</td>
+		<td>
+			{{input type="text" id="age" placeholder="Age?" value=age}}
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="button" name="submitBtn" id="submitBtn" value="Save" {{action 'add'}}/> 
+		&nbsp;&nbsp;
+		<input type="button" name="clearBtn" id="clearBtn" value="Clear" {{action 'clear'}}/></td>
+	</tr>
+</table>
+</form>

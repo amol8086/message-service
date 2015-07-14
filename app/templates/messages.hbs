@@ -1,0 +1,31 @@
+Existing Messages:
+
+<br/>
+<br/>
+
+<form>
+<table cellpadding="5" cellspacing="5">
+	<tr style="background-color: rgb(150, 150, 187);">
+		<th>Predefined Message Text</th>
+		<th>Gender</th>
+		<th>Age</th>
+		<th>Action</th>
+	</tr>
+
+
+	{{#each model as |item|}}
+		<tr>
+			<td>{{item.preDefinedMessageText}}</td>
+			<td>{{item.gender}}</td>
+			<td>{{item.age}}</td>
+			<td>
+					&nbsp; <input type="button" name="viewBtn" id="viewBtn" value="View" {{action 'view' item}}/> &nbsp;|&nbsp;
+					<input type="button" name="editBtn" id="editBtn" value="Edit" {{action 'edit' item}}/> &nbsp;|&nbsp;
+					<input type="button" name="deleteBtn" id="deleteBtn" value="Delete" {{action 'delete' item}}/> &nbsp;
+			</td>
+			<td></td>
+		</tr>
+	{{/each}}
+</table>
+
+</form>
