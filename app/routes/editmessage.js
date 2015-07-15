@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-		afterModel : function(messages, transition) {
+		afterModel : function(/*messages, transition*/) {
 			// This can be used for fetching metadata
 			/*var meta0 = this.store.get('meta');
     	var meta = this.store.metadataFor("message");
